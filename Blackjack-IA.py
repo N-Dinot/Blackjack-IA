@@ -7,8 +7,6 @@ fenetre.title("Blackjack solo")
 #Nom de la fenêtre
 fenetre.config(bg = "#1b1b1b")                   
 #Couleur du fond de la fenêtre
-fenetre.geometry("1250x800")                     
-#Taille initiale de la fenêtre
 fenetre.attributes('-fullscreen', True)                            
 #Taille de la fenêtre
 
