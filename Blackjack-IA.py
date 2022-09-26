@@ -9,8 +9,8 @@ fenetre.config(bg = "#1b1b1b")
 #Couleur du fond de la fenêtre
 fenetre.geometry("1250x800")                     
 #Taille initiale de la fenêtre
-fenetre.minsize(300,400)                             
-#Taille minimale de la fenêtre
+fenetre.attributes('-fullscreen', True)                            
+#Taille de la fenêtre
 
 def creerjeu():
     """Crée la main de départ du joueur et de l'IA"""
