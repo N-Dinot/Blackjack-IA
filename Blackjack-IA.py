@@ -148,17 +148,17 @@ titre.place (x=400, y=30)
 description= Label(fenetre, text="Comment se joue le blackjack ?"+'\n'+'\n'+'\n'+'\n'+"Le Blackjack est un jeu de carte dans lequel" + '\n' + "les joueurs doivent se rapprocher le plus possible" + '\n' + " de 21, en piochant les cartes du paquet." + '\n' + '\n' + "Le paquet contient les cartes suivantes : " + '\n' + '\n' + "1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10" + '\n' + '\n' + '\n' + "Lors du commencement, chaque joueur pioche" + '\n' + "automatiquement 2 cartes que chacun peut voir." + '\n' + '\n' + "UNE FOIS qu'une carte a été PIOCHÉE, elle est" + '\n' + "retirée du paquet et ne peut pas être repiochée !" + '\n' + '\n' + "Toute carte piochée parla suite n'est visible que" + '\n' + "par son propriétaire ; le nombre présent sur la carte" + '\n' + "représente le nombre de point qu'elle vaut." + '\n' + '\n' + "Si le chiffre 21 est dépassé, alors c'est perdu" + '\n' + "(même si l'adversaire est bien en dessous de 21) !" + '\n' + '\n' + "Si vous avez peur de dépasser 21 lors de la"+'\n'+"prochaine pioche, alors vous pouvez passer"+'\n'+"votre tour ; tant qu'un autre joueur veut"+'\n'+"piocher, la partie continue."+'\n'+'\n'+"Ce n'est que lors de la fin de la partie que"+'\n'+"que les scores sont révélés et le gagnant désigné !", relief=FLAT, fg = "white", bg = "grey7", width=40, height = 40)
 description.place (x=900, y=125)
 
-bouton_reinit = Button(fenetre, text="Quitter", width=5, bg = "grey7",fg = "red",command=quitter, relief=FLAT)                                                   
-#On crée le bouton pour quitter
+bouton_reinit = Button(fenetre, text="Quitter", width=5, bg="grey7", fg="red", command=quitter, relief=FLAT, activebackground='red')
+# On crée le bouton pour quitter
 bouton_reinit.place(x=10, y=10)
-bouton_p = Button(fenetre, text="Pioche", width=15,height = 2,bg = "grey7",fg = "orange",command=pj, relief=FLAT)                                        
-#On crée le bouton pour piocher
+bouton_p = Button(fenetre, text="Pioche", width=15, height=2, bg="grey7", fg="orange", command=pj, relief=FLAT, activebackground='grey8')
+# On crée le bouton pour piocher
 bouton_p.place(x=600, y=205)
-bouton_v = Button(fenetre, text="Valider la main", width=15,height = 2, bg = "grey7",fg = "dodger blue",command=valider, relief=FLAT)          
-#On crée le bouton pour passer son tour
+bouton_v = Button(fenetre, text="Valider la main", width=15, height=2, bg="grey7", fg="dodger blue", command=valider, relief=FLAT, activebackground='grey8')
+# On crée le bouton pour passer son tour
 bouton_v.place(x=600, y=255)
-bouton_r = Button(fenetre, text="Rejouer", width=15,height = 2, bg = "grey7",fg = "spring green",command=rejouer, relief=FLAT)                     
-#On crée le bouton pour relancer une partie
+bouton_r = Button(fenetre, text="Rejouer", width=15, height=2, bg="grey7", fg="spring green", command=rejouer, relief=FLAT, activebackground='grey8')
+# On crée le bouton pour relancer une partie
 bouton_r.place(x=600, y=305)
 
 p= StringVar()                                                                                                                      
