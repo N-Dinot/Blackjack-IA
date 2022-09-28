@@ -85,7 +85,6 @@ def fin():
         act.set("Bravo ! Vous avez plus de points que l'IA, vous l'emportez !")
         tia.set("Score de l'IA : " + str(sum(ia)))
         mia.set("Main de l'IA : " + str(ia))
-        vic=vic+1
     elif sum(j) <= 21 and sum(ia) > 21:
         act.set("Bravo ! L'IA a dépassé 21, vous l'emportez !")
         tia.set("Score de l'IA : " + str(sum(ia)))
